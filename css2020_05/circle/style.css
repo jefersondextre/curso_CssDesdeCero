@@ -1,0 +1,15 @@
+body {
+  background: #222;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  background: rgba(192, 56, 56);
+  margin: 100px auto;
+  border-radius: 50%;
+  box-shadow: -15px -15px 20px 0 rgba(0, 0, 0, .45) inset,
+    5px 5px 5px 0 rgba(255, 255, 255, .3) inset,
+    5px 5px 15px 0 rgba(255, 255, 255, .1);
+
+}

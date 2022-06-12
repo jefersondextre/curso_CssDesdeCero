@@ -1,0 +1,14 @@
+:root {
+   --color: green;
+}
+h1 {
+   background-color: bisque;
+   color: var(--color);
+}
+p {
+   color: var(--color);
+}
+ul {
+   color: var(--color);
+}
+/* Las variables css permiten cambiar desde un solo lado todas las instancias de la variable creada  */

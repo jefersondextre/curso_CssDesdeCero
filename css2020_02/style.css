@@ -1,0 +1,116 @@
+/* SELECTORES SIMPLES : etiquetas, tipo o elemento son etiquetas html */
+/* Usados para normalizar todas la etiquetas */
+
+h1 {
+  margin: 20px;
+}
+
+p {
+  /* color:blue; */
+}
+
+/* Selectores Simples: de clases  
+
+No pueden comenzar por número
+Pueden comenzar con guiones o guiones bajos
+Puedes usar emojis
+
+*/
+.title {
+  color: green;
+}
+
+.description {
+  color: red;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75em 2em;
+  background: steelblue;
+  color: white;
+  border-radius: 0.25em;
+}
+
+/* 
+SELECTORES SIMPLES: De ID 
+Son unicos, no se usan en css no es una buena práctica.
+
+usado para anclas en html
+usado con js
+tienen especificidad muy alta
+*/
+#title {
+  background: yellow;
+}
+
+/*
+SELECTORES COMPUESTOS - DESCENDIENTES
+*/
+body span {
+  color: blue;
+}
+
+/* SELECTORES CON OPERADORES  
+
+*  Universal 
+>  hijo directo
++  hermano siguiente
+~  hermanos siguientes sin importar haya elementos entre si
+
+
+SELECTORES DE ATRIBUTO
+Usan corchetes 
+[attr = "value"]
+[attr]
+
+*/
+[type="text"] {
+  border: solid red;
+}
+
+[type="number"] {
+  border: 1px solid green;
+}
+
+[required] {
+  background: pink;
+}
+
+[type="submit"] {
+  background: steelblue;
+  color: white;
+  border: none;
+  padding: 9px 18px;
+}
+
+/*  SELECTORES
+Comienza con : [attr ^="value"]
+*/
+a[href ^="http://"] {
+  color: red;
+  border-bottom: 4px dashed red;
+}
+
+/* Termina con:  [attr $="value"]*/
+a[href $=".mp4"] {
+  margin: 15px;
+  display: inline-block;
+  background: red;
+  color: white;
+}
+
+/*
+Contiene : [attr *="value"]
+*/
+a[href *="team"] {
+  background-color: green;
+}
